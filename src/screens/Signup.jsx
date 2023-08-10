@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import useFetch from "../hooks/useFetch";
+import useFetch from "../screens/hooks/useFetch";
 
 // https://developers.google.com/identity/gsi/web/reference/js-reference
 
-const SignUp = () => {
+const Signup = () => {
   const { handleGoogle, loading, error } = useFetch(
     "http://localhost:5152/signup"
   );
@@ -57,4 +57,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default Signup;
